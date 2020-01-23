@@ -1,0 +1,19 @@
+{
+  "name": "@mytools/print",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "author": "Jalal Maskoun <jimmy002020@gmail.com>",
+  "license": "LGPL-3.0",
+  "repository": "https://github.com/jalal246/dflex/tree/master/packages/core",
+  "files": [
+    "src",
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0"
+  }
+}

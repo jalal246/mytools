@@ -1,0 +1,21 @@
+{
+  "name": "mytools",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "scripts/**"
+  ],
+  "repository": "https://github.com/jalal246/mytools.git",
+  "author": "Jalal Maskoun <jimmy002020@gmail.com>",
+  "license": "LGPL-3.0",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "lerna": "^3.20.2",
+    "lerna-changelog": "^1.0.0",
+    "prettier": "^1.19.1"
+  }
+}

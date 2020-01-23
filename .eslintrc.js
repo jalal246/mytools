@@ -2,7 +2,7 @@ module.exports = {
   parser: "babel-eslint",
   env: {
     browser: true,
-    es6: true,
+    es6: false,
     node: true
   },
   extends: ["airbnb-base", "prettier"],
@@ -11,7 +11,7 @@ module.exports = {
     SharedArrayBuffer: "readonly"
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 5,
     sourceType: "module"
   },
   rules: {

@@ -1,1 +1,1 @@
-export { msg, success, warning, error } from "./print";
+module.exports = require("./print");

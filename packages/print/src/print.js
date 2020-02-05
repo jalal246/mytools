@@ -19,6 +19,7 @@ function log(clr, txt) {
 
   console.log(clr(txt));
 }
+
 function msg(txt) {
   log(cyanBright, `\n${txt}`);
 }
@@ -40,13 +41,6 @@ function error(txt) {
 module.exports = {
   setIsSilent,
 
-  msg,
-  success,
-  warning,
-  error
-};
-
-module.exports = {
   msg,
   success,
   warning,

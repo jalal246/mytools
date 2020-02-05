@@ -1,6 +1,6 @@
 {
   "name": "@mytools/print",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "src/index.js",
   "author": "Jalal Maskoun <jimmy002020@gmail.com>",
   "license": "LGPL-3.0",

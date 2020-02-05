@@ -9,3 +9,5 @@ npm install @mytools/print
 ```js
 import { setIsSilent, msg, success, warning, error } from "@mytools/print";
 ```
+
+`setIsSilent(boolean)` helps to mute all messages.

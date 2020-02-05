@@ -2,28 +2,49 @@
 const chalk = require("chalk");
 
 const {
-  bgBlue,
+  cyanBright,
   red: { bold: red },
   yellow: { bold: yellow },
   green: { bold: green }
 } = chalk;
 
+let isSilent = false;
+
+function setIsSilent(bool) {
+  isSilent = bool;
+}
+
+function log(clr, txt) {
+  if (isSilent) return;
+
+  console.log(clr(txt));
+}
 function msg(txt) {
-  console.log(bgBlue(`\n${txt}`));
+  log(cyanBright, `\n${txt}`);
 }
 
 function success(txt) {
-  console.log(green(`\n${txt}`));
+  log(green, `\n${txt}`);
 }
 
 function warning(txt) {
-  console.log(yellow(`\nWarning: ${txt}`));
+  log(yellow, `\nWarning: ${txt}`);
 }
 
 function error(txt) {
-  console.log(red(`\n${txt}\n\n`));
+  log(red, `\n${txt}\n\n`);
+
   process.exit(1);
 }
+
+module.exports = {
+  setIsSilent,
+
+  msg,
+  success,
+  warning,
+  error
+};
 
 module.exports = {
   msg,

@@ -7,5 +7,5 @@ npm install @mytools/print
 ```
 
 ```js
-import { msg, success, warning, error } from "@mytools/print";
+import { setIsSilent, msg, success, warning, error } from "@mytools/print";
 ```

@@ -1,6 +1,6 @@
 {
   "name": "@mytools/print",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "src/index.js",
   "author": "Jalal Maskoun <jimmy002020@gmail.com>",
   "license": "LGPL-3.0",
@@ -10,10 +10,25 @@
     "dist",
     "README.md"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
     "chalk": "^3.0.0"
+  },
+  "keywords": [
+    "builderz",
+    "get-info",
+    "package-sorter",
+    "corename",
+    "mytools",
+    "move-position",
+    "folo",
+    "dflex",
+    "textics",
+    "textics-stream",
+    "utility",
+    "tools"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }

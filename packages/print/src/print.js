@@ -1,4 +1,7 @@
 /* eslint-disable import/no-dynamic-require, no-console */
+
+"use-strict";
+
 const chalk = require("chalk");
 
 const {
@@ -17,7 +20,7 @@ function setIsSilent(bool) {
 function log(clr, txt) {
   if (isSilent) return;
 
-  console.log(clr(txt));
+  console.info(clr(txt));
 }
 
 function msg(txt) {
@@ -33,9 +36,9 @@ function warning(txt) {
 }
 
 function error(txt) {
-  log(red, `\n${txt}\n\n`);
+  if (isSilent) return;
 
-  process.exit(1);
+  console.error(red(`\n${txt}\n\n`));
 }
 
 module.exports = {

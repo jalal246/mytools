@@ -14,4 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run a one-line script
-        run: echo PR is labeled
+        run: job.status="success"
+
+  build2:
+    if: ${{ github.event.action != 'labeled' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: job.status="failure"

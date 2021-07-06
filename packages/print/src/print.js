@@ -4,8 +4,6 @@
 
 const chalk = require("chalk");
 
-const x = "1";
-
 const {
   cyanBright,
   red: { bold: red },

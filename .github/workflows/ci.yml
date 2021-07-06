@@ -8,10 +8,9 @@ on:
 
 jobs:
   labeled:
-    if: ${{ github.event.action == 'labeled' }}
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
       - name: Run a one-line script
-        run: ${{ true }}
+        run: ${{ github.event.action == 'labeled' }}

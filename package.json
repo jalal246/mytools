@@ -5,6 +5,9 @@
     "packages/*",
     "scripts/**"
   ],
+  "scripts": {
+    "publish": "lerna publish --no-git-tag-version --no-push"
+  },
   "repository": "https://github.com/jalal246/mytools.git",
   "author": "Jalal Maskoun <jimmy002020@gmail.com>",
   "license": "LGPL-3.0",

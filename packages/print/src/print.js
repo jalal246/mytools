@@ -4,11 +4,13 @@
 
 const chalk = require("chalk");
 
+const x = "1";
+
 const {
   cyanBright,
   red: { bold: red },
   yellow: { bold: yellow },
-  green: { bold: green }
+  green: { bold: green },
 } = chalk;
 
 let isSilent = false;
@@ -47,5 +49,5 @@ module.exports = {
   msg,
   success,
   warning,
-  error
+  error,
 };

@@ -7,11 +7,11 @@ on:
   pull_request:
 
 jobs:
-  build:
-    if: ${{ github.event.action == 'labeled' }}
+  labeled:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
       - name: Run a one-line script
-        run: echo PR is labeled
+        run: echo ${{ github.event }}
+      - run: ${{  github.event_name == 'pull_request' && github.event.label.name == 'documentation' }}
